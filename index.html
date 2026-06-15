@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทดลองจัดการ</title>
+    <style>
+        :root {
+            --bg: #eef4ff;
+            --card: #ffffff;
+            --accent: #4f6ef7;
+            --text: #1f2937;
+            --muted: #5f6a84;
+            --border: rgba(79, 110, 247, 0.18);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Sarabun", "Noto Sans Thai", "Segoe UI", sans-serif;
+            color: var(--text);
+            background: radial-gradient(circle at top left, rgba(79, 110, 247, 0.18), transparent 30%),
+                linear-gradient(180deg, #fdfcff 0%, #eef4ff 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .card {
+            width: min(100%, 560px);
+            background: var(--card);
+            border-radius: 28px;
+            box-shadow: 0 28px 80px rgba(37, 71, 144, 0.12);
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .hero {
+            padding: 36px 32px 28px;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 148px;
+            height: 148px;
+            object-fit: cover;
+            border-radius: 26px;
+            border: 5px solid rgba(79, 110, 247, 0.16);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 3vw, 2.4rem);
+            margin: 0 0 18px;
+            letter-spacing: -0.03em;
+        }
+
+        .hero p {
+            margin: 0 auto 28px;
+            max-width: 440px;
+            line-height: 1.8;
+            color: var(--muted);
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 26px;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 999px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 18px 40px rgba(79, 110, 247, 0.18);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 22px 48px rgba(79, 110, 247, 0.2);
+        }
+
+        .footer {
+            padding: 20px 24px;
+            background: rgba(79, 110, 247, 0.05);
+            color: var(--muted);
+            text-align: center;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <section class="hero">
+            <img src="https://scontent.fbkk3-1.fna.fbcdn.net/v/t39.30808-6/721324271_2129784007957612_24195904655688752_n.jpg?stp=dst-jpg_tt6&cstp=mx2041x2048&ctp=s2041x2048&_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=U1m56FG8xqUQ7kNvwGA7SAm&_nc_oc=AdpFPWc-XJIltmje6-Cxg1vfGzAt3qxhk3zZMkjrz33xAkhN9UlHKXyF2e9HmfI91G4&_nc_zt=23&_nc_ht=scontent.fbkk3-1.fna&_nc_gid=G7m9Mbj0_EV60HtqDLX-KQ&_nc_ss=7b2a8&oh=00_Af_qztf4mm98NqrHVJxOq8CrLoi1eOYc63BVMNR9ktzluA&oe=6A356FE8"
+                alt="รูปแนะนำตัว">
+            <h1>แนะนำตัวผ่านเว็บนี้</h1>
+            <p>สวัสดีครับ ผมชื่อแป้ง นี่เป็นหน้าเว็บแรกที่ผมสร้างขึ้นมา เพื่อแนะนำตัวและแบ่งปันลิงก์สำคัญ</p>
+            <a class="button" href="https://www.instagram.com/pang._ple/" target="_blank"
+                rel="noopener noreferrer">ติดตาม IG</a>
+        </section>
+        <div class="footer">ได้เขียนโค้ดดูครั้งแรกเต็มที่แล้วครับ</div>
+    </div>
+</body>
+
+</html>
